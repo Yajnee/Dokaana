@@ -1,0 +1,23 @@
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(240, 179, 43, 0.18), transparent 24%),
+    radial-gradient(circle at bottom left, rgba(203, 138, 93, 0.16), transparent 30%),
+    linear-gradient(180deg, #fbf6ef 0%, #f3e4cf 48%, #f8f1e8 100%);
+}
+
+.container {
+  display: flex;
+  min-height: calc(100vh - 84px);
+}
+
+.main {
+  flex: 1;
+  padding: 0 24px 24px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}
